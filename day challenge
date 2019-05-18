@@ -3,7 +3,7 @@ library(tidyverse)
 library(janitor)
 
 #read the data
-dataset<- read_csv("C:/Users/ricky/Documents/anonymous-survey-responses.csv") %>% clean_names()
+dataset<- read_csv("dir/anonymous-survey-responses.csv") %>% clean_names()
 
 #check the first rows of the dataset
 head(dataset)
@@ -19,3 +19,4 @@ ggplot(data=dataset, aes(x= just_for_fun_do_you_prefer_dogs_or_cat))+
   geom_bar() + #draw the bars of the chart
   ggtitle("Dogs or cats?") + 
   xlab("")
+#You can find this exercise on Anthony Reese' Kaggle page: https://www.kaggle.com/studentar/kernels?sortBy=voteCount&group=everyone&pageSize=20&userId=1300506&language=R
